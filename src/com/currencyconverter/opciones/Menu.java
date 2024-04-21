@@ -1,18 +1,5 @@
 package com.currencyconverter.opciones;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.Reader;
-import java.nio.Buffer;
-import java.util.Scanner;
-
-import com.google.gson.Gson;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-
 public class Menu {
     private String[][] currencyOptions = {
         {"ARS", "Peso Argentino"}, 
@@ -51,7 +38,7 @@ public class Menu {
     }
 
     public void optionMenu(){
-        System.out.println("******************************");
+        System.out.println("\n******************************");
         
         for (int i = 0; i < currencyOptions.length; i++) {
             System.out.println(i + 1 + " => " + currencyOptions[i][0] + " - " + currencyOptions[i][1]);
