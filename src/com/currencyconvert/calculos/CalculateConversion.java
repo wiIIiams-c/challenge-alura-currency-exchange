@@ -3,10 +3,10 @@ package com.currencyconvert.calculos;
 import com.currencyconverter.models.Currency;
 
 public class CalculateConversion {
-    private double conversionResult;
+    private long conversionResult;
 
     public void setConversionResult(Currency currency) {
-        this.conversionResult = currency.getValueToConvert() * currency.getConversionRate();
+        this.conversionResult = (long) (currency.getValueToConvert() * currency.getConversionRate());
         currency.setConversionResult(this.conversionResult);
     }
 }
