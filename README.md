@@ -13,7 +13,7 @@ aplicación funcione ya que dicha pagina te entregara una api key que deberas in
 
 ### Agregar API Key
 
-La api key deberas agregarla en el archivo ApiCurrency.java reeplazando el texto que dice AQUI_TU_API_KEY, luego le das guardar al archivo y todo ok.
+La api key deberas agregarla en el archivo ApiCurrency.java reemplazando el texto que dice AQUI_TU_API_KEY, luego le das guardar al archivo y todo ok.
 
 ![alt text](https://storage.googleapis.com/media-github-readme/alura-05.png)
 
