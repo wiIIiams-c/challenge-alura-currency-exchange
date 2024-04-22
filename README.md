@@ -17,6 +17,12 @@ La api key deberas agregarla en el archivo ApiCurrency.java reemplazando el text
 
 ![alt text](https://storage.googleapis.com/media-github-readme/alura-05.png)
 
+### Libreria Gson
+
+Deberas contar tambien con la libreria Gson en el proyecto el cual se puede descargar desde su pagina [Gson](https://search.maven.org/artifact/com.google.code.gson/gson/2.10.1/jar?eh=)
+
+![alt text](https://storage.googleapis.com/media-github-readme/alura-08.png)
+
 ## Aplicación
 
 Al ejecutar la aplicación esta te recibe con 3 opciones que se muestran a continuación, para cada menu solo debes ingresar el numero de opcion que deseas:
