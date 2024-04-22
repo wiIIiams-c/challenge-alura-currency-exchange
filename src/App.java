@@ -57,7 +57,7 @@ public class App {
                     System.out.println("\nNo es una opcion valida\n");
                 }
             } catch (Exception e) {
-                System.out.println("\nNo es una opcion valida\n");
+                System.out.println("\n"+e.getMessage()+"\n");
             }
         }
     }
