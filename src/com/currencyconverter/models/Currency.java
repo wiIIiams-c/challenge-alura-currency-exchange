@@ -1,7 +1,7 @@
 package com.currencyconverter.models;
 
-import com.currencyconvert.calculos.ConversionUnixTime;
 import com.currencyconverter.api.ApiCurrency;
+import com.currencyconverter.calculos.ConversionUnixTime;
 
 public class Currency {
     private String currencyBase;

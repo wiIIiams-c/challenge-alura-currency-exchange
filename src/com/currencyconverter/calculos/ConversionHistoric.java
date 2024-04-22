@@ -1,4 +1,4 @@
-package com.currencyconvert.calculos;
+package com.currencyconverter.calculos;
 
 import java.io.FileWriter;
 import java.nio.file.Files;

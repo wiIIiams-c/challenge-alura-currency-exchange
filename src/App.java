@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-import com.currencyconvert.calculos.CalculateConversion;
-import com.currencyconvert.calculos.ConversionHistoric;
+import com.currencyconverter.calculos.CalculateConversion;
+import com.currencyconverter.calculos.ConversionHistoric;
 import com.currencyconverter.models.Currency;
 import com.currencyconverter.opciones.Menu;
 
