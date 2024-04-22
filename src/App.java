@@ -33,7 +33,7 @@ public class App {
     
                     Scanner inputValue = new Scanner(System.in);
                     System.out.println("\nEscriba el valor a convertir:");
-                    var inValue = Long.valueOf(inputValue.nextLine());
+                    var inValue = (long)inputValue.nextDouble();
     
                     Currency currency = new Currency(inCurrency, outCurrency, inValue);
                     CalculateConversion calculateConversion = new CalculateConversion();
@@ -59,7 +59,6 @@ public class App {
             } catch (Exception e) {
                 System.out.println("\nNo es una opcion valida\n");
             }
-
         }
     }
 }
