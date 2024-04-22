@@ -19,7 +19,11 @@ public class ApiCurrency {
         try {
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
-            return new Gson().fromJson(response.body(), CurrencyApi.class);
+            if(response.statusCode() == 200){
+                return new Gson().fromJson(response.body(), CurrencyApi.class);
+            }else{
+                throw new RuntimeException("Se ha cancelado la solicitud, revise su configuracion de API");
+            }
         } catch (Exception e) {
             throw new RuntimeException("Ha ocurrido un error en la conexion con la API, referencia: " + e.getMessage());
         }
