@@ -10,7 +10,7 @@ import com.google.gson.Gson;
 
 public class ApiCurrency {
     public CurrencyApi transformCurrency(String inputCurrency, String outputCurrency){
-        String apiKey = "";
+        String apiKey = "AQUI_TU_API_KEY";
         URI apiUrl = URI.create("https://v6.exchangerate-api.com/v6/" + apiKey + "/pair/" + inputCurrency + "/" + outputCurrency);
 
         HttpClient client = HttpClient.newHttpClient();
