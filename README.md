@@ -1,6 +1,6 @@
 # Conversor de Moneda - Challenge ONE - Java - Back end
 
-Convertidor de divisas realizado para el primer desafio back end Java de alura
+Convertidor de divisas realizado para el primer desafio back end Java de alura. 
 Este utiliza una API para realizar las conversiones de acuerdo al input que da el usuario.
 
 ## Pre requisitos
@@ -51,7 +51,7 @@ Dichos resultado se almacenara en un archivo txt como historial de conversion qu
 
 ### Opción 2 - Historial de Conversion
 
-Esta opcion podras viasualizar todas las conversiones realizadas con el detalle mencionado anteriormente.
+Esta opcion podras visualizar todas las conversiones realizadas con el detalle mencionado anteriormente.
 
 ![alt text](https://storage.googleapis.com/media-github-readme/alura-04.png)
 
