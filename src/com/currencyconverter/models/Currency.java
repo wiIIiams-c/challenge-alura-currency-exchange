@@ -7,12 +7,12 @@ public class Currency {
     private String currencyBase;
     private String currencyTarget;
     private double conversionRate;
-    private long conversionResult;
-    private long valueToConvert;
+    private double conversionResult;
+    private double valueToConvert;
     private long conversionDate;
     private long conversionLastUpdate;
     
-    public Currency(String currencyBase, String currencyTarget, long valueToConvert) {
+    public Currency(String currencyBase, String currencyTarget, double valueToConvert) {
         this.currencyBase = currencyBase;
         this.currencyTarget = currencyTarget;
         this.valueToConvert = valueToConvert;
@@ -20,7 +20,7 @@ public class Currency {
         this.getConversionDataApi();
     }
 
-    public void setConversionResult(long conversionResult) {
+    public void setConversionResult(double conversionResult) {
         this.conversionResult = conversionResult;
     }
 
@@ -28,7 +28,7 @@ public class Currency {
         return conversionRate;
     }
 
-    public long getValueToConvert() {
+    public double getValueToConvert() {
         return valueToConvert;
     }
 
