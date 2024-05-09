@@ -7,35 +7,34 @@ import com.currencyconverter.opciones.Menu;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        Scanner inputUser = new Scanner(System.in);
         Menu menu = new Menu();
         menu.headerMenu();
-        int inOption = 0;
+        int inputOption = 0;
         
-        while (inOption != 3) {
+        while (inputOption != 3) {
             menu.optionHeader();
 
             try {
                 ConversionHistoric conversionHistoric = new ConversionHistoric();
-                System.out.println("\nEscriba la opcion deseada:");
-                Scanner inputOption = new Scanner(System.in);
-                inOption = inputOption.nextInt();
-    
-                if(inOption == 1){
+                System.out.println("\nDigite la opcion deseada:");
+                inputOption = inputUser.nextInt();
+                
+                if(inputOption == 1){
                     menu.optionMenu();
                     
-                    Scanner inputCurrency = new Scanner(System.in);
-                    System.out.println("Ingresa opcion de la divisa de origen:");    
-                    var inCurrency = menu.getCurrencyCodeByNumberOption(inputCurrency.nextInt());
+                    System.out.println("Digita la opcion de la divisa de origen:");    
+                    int inputCurrency = inputUser.nextInt();
+                    var inCurrency = menu.getCurrencyCodeByNumberOption(inputCurrency);
             
-                    Scanner outputCurrency = new Scanner(System.in);
-                    System.out.println("\nIngresa opcion de la divisa a convertir:");
-                    var outCurrency = menu.getCurrencyCodeByNumberOption(outputCurrency.nextInt());
+                    System.out.println("\nDigita la opcion de la divisa a convertir:");
+                    int outputCurrency = inputUser.nextInt();
+                    var outCurrency = menu.getCurrencyCodeByNumberOption(outputCurrency);
     
-                    Scanner inputValue = new Scanner(System.in);
                     System.out.println("\nEscriba el valor a convertir:");
-                    var inValue = (long)inputValue.nextDouble();
+                    Double inputValue = inputUser.nextDouble();
     
-                    Currency currency = new Currency(inCurrency, outCurrency, inValue);
+                    Currency currency = new Currency(inCurrency, outCurrency, inputValue);
                     CalculateConversion calculateConversion = new CalculateConversion();
     
                     calculateConversion.setConversionResult(currency);
@@ -46,16 +45,18 @@ public class App {
                     System.out.println(currency.toString());
                     System.out.println("******************************\n");
                     
-                }else if(inOption == 2){
+                }else if(inputOption == 2){
                     System.out.println("\n******************************");
                     System.out.println("Historial de Conversiones:\n");
                     conversionHistoric.readFileHistoricConversion();
                     System.out.println("******************************\n");
-                }else if(inOption == 3){
+                }else if(inputOption == 3){
                     System.exit(0);
                 }else{
-                    System.out.println("\nNo es una opcion valida\n");
+                    System.out.println("\nOpcion digitada no esta listada en la lista\n");
                 }
+            } catch (IndexOutOfBoundsException e) {
+                System.out.println("\nOpcion digitada no esta listada en la lista");
             } catch (Exception e) {
                 System.out.println("\n"+e.getMessage()+"\n");
             }
