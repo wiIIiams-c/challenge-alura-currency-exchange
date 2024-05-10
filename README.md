@@ -60,3 +60,9 @@ Esta opcion podras visualizar todas las conversiones realizadas con el detalle m
 Si deseas agregar mas divisas a lista deberas ir a la clase Menu.java y agregarlas en el arreglo de nombre currencyOptions
 
 ![alt text](https://storage.googleapis.com/media-github-readme/alura-07.png)
+
+## Alura Challenge Conversor Badge
+
+<p align="center" width="100%">
+    <img width="50%" src="https://storage.googleapis.com/media-github-readme/Badge-Conversor.png">
+</p>
